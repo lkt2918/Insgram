@@ -2,7 +2,7 @@
 
 <form action = ""  method="post" >
     {% comment %} avoid network attack {% endcomment %}
-    {% csrf_token %}
+    {% csrf_token %} 
     <p>Are you sure?{{object.title}}</p>
     <button type="submit"> Confirm Delete</button>
 </form>
